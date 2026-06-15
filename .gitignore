@@ -1,0 +1,19 @@
+# Environment & secrets
+.env
+*.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Mac
+.DS_Store
+
+# Future project folders
+chroma_db/
+*.pdf
