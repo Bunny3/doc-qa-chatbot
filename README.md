@@ -13,7 +13,7 @@ A production-style RAG-powered document Q&A chatbot built with Python, Groq LLM,
 
 ### 1. Clone & setup
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Bunny3/doc-qa-chatbot.git
 cd doc-qa-chatbot
 python3 -m venv venv
 source venv/bin/activate
