@@ -32,7 +32,7 @@ class VectorStore:
         embeddings = self.embedder.embed_batch(texts)
 
         # ChromaDB needs: unique ids, embeddings, documents (raw text), metadata
-        ids = [f"chunk_{c['chunk_index']}" for c in chunks]
+        ids = [f"{c['source']}_chunk_{c['chunk_index']}" for c in chunks]
         metadatas = [
             {
                 "source": c["source"],
@@ -42,7 +42,7 @@ class VectorStore:
             for c in chunks
         ]
 
-        self.collection.add(
+        self.collection.upsert(
             ids=ids,
             embeddings=embeddings,
             documents=texts,
