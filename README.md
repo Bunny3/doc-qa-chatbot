@@ -58,7 +58,7 @@ docker run -d -p 8000:8000 --env-file .env doc-qa-chatbot
 ```
 
 ## 📁 Project Structure
-doc-qa-chatbot/
+```doc-qa-chatbot/
 ├── src/
 │   ├── config.py              # Central config from env vars
 │   ├── llm.py                 # LLM client wrapper (Groq, swappable)
@@ -82,7 +82,7 @@ doc-qa-chatbot/
 ├── Dockerfile
 ├── requirements.txt           # Backend dependencies
 └── requirements-ui.txt        # Streamlit-only dependencies
-
+```
 ## 🔍 How It Works
 
 1. **Ingestion** — A PDF is parsed page-by-page, cleaned, and split into ~500-token chunks with 50-token overlap to preserve context across boundaries.
