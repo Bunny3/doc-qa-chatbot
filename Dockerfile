@@ -15,6 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the actual application code
 COPY src/ ./src/
+COPY seed_data/sample.pdf ./data/raw/sample.pdf
 COPY main.py .
 
 # ChromaDB will persist data here — mount this as a volume in production

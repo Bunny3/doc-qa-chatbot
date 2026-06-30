@@ -16,4 +16,4 @@ build/
 
 # Future project folders
 chroma_db/
-*.pdf
+data/
