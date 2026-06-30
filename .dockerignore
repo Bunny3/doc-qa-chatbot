@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+.env
+.git/
+.gitignore
+chroma_db/
+data/raw/*.pdf
+tests/
+ui/
+*.md
+.DS_Store
